@@ -10,6 +10,7 @@
 	/* avoids clipping on center and no clipping of image*/
 	background-position: center;
 	position: relative;
+	-webkit-clip-path: polygon(0 0, 100% 23%, 73% 80%, 22% 100%);
 	clip-path: polygon(0 0, 100% 23%, 73% 80%, 22% 100%);
 
 	&__logo-box {
