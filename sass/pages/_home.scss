@@ -1,23 +1,38 @@
 .section-about {
-	background-color: $color-grey-light;
-	padding: 3rem 0 5rem;
+    background-color: $color-grey-light;
+    padding: 3rem 0 5rem;
 }
 
 .section-features {
-	padding: 20rem 0;
-	background-image: url(../img/nat-4.jpg);
-	background-size: cover;
-	-webkit-clip-path: polygon(7% 1%, 100% 0%, 90% 100%, 0% 100%);
-
-	clip-path: polygon(7% 1%, 100% 0%, 90% 100%, 0% 100%);
+    padding: 20rem 0;
+    background-image: url(../img/nat-4.jpg);
+    background-size: cover;
+    -webkit-clip-path: polygon(7% 1%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(7% 1%, 100% 0%, 90% 100%, 0% 100%);
 }
 
 .section-tours {
-	background-color: $color-grey-light;
-	padding: 5rem 0 8rem 0;
+    background-color: $color-grey-light;
+    padding: 5rem 0 8rem 0;
 }
 
 .section-stories {
-	position: relative;
-	padding: 5rem 0 11rem 0;
+    position: relative;
+    padding: 5rem 0 11rem 0;
+}
+
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+
+/*Single ../ for image as the path is taken from final compiled css */
+
+.book {
+    background-image: url(../img/nat-10.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    height: 50rem;
 }

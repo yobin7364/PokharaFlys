@@ -1,14 +1,14 @@
 {
-	"name": "adventure",
-	"version": "1.0.0",
-	"description": "page",
-	"main": "index.js",
-	"scripts": {
-		"compile:sas": "node-sass sass/main.scss css/style.css -w"
-	},
-	"author": "yobin",
-	"license": "ISC",
-	"devDependencies": {
-		"node-sass": "^4.11.0"
-	}
+    "name": "adventure",
+    "version": "1.0.0",
+    "description": "page",
+    "main": "index.js",
+    "scripts": {
+        "compile:sas": "node-sass sass/main.scss css/style.css -w"
+    },
+    "author": "yobin",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^4.11.0"
+    }
 }

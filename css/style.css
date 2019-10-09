@@ -441,3 +441,15 @@ body {
 .section-stories {
   position: relative;
   padding: 5rem 0 11rem 0; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #55c57a, #28b485); }
+
+/*Single ../ for image as the path is taken from final compiled css */
+.book {
+  background-image: url(../img/nat-10.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  height: 50rem; }
