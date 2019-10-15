@@ -13,6 +13,13 @@
     position: relative;
     -webkit-clip-path: polygon(0 0, 100% 23%, 73% 80%, 22% 100%);
     clip-path: polygon(0 0, 100% 23%, 73% 80%, 22% 100%);
+    //Responsive image in css using media query
+    //dpi = dots per inch and 192dpi is the highest resolution.pkr1-large is not available now 
+    //'min-resolution' tagrets 1x or 2x and "min-width" targets the web page width
+    //Here , means OR condition. 37.25em = 600px/16px
+    // @media(min-resolution:192dpi) and (min-width:37.25px), (min-width:125em){
+    //     background-image: url(../img/pkr1-large.JPG);
+    // }
     &__logo-box {
         position: absolute;
         top: 4rem;

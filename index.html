@@ -15,6 +15,21 @@
 </head>
 
 <body>
+    <!-- <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">MENU</label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__items"><a href="#" class="navigation__link">About Natous</a></li>
+                <li class="navigation__items"><a href="#" class="navigation__link">Your Benifits</a></li>
+                <li class="navigation__items"><a href="#" class="navigation__link">Popular Tours</a></li>
+                <li class="navigation__items"><a href="#" class="navigation__link">Stories</a></li>
+                <li class="navigation__items"><a href="#" class="navigation__link">Book Now</a></li>
+            </ul>
+        </nav>
+    </div> -->
+
     <div class="initial-head">
         <header class="header">
             <div class="header__logo-box">
@@ -54,9 +69,18 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                        <!-- This is density and resolution switching -->
+                        <!-- 300w is the width description of nat-1 image which helps browser to determine the width of
+                        the image without downloading it.For browser to choose the image from srcset "sizes" attribute
+                        helps it.(max-width:900px)20vw means at break point 900px of the webpage the image size is
+                        13vw (i.e.13% = 117/900), 300px is default size of image. "src" if "srcset" is not available."size" provide
+                        1x or 2x density of pixel from vw. Here "size" is media query-->
+                        <img srcset="img/nat-1.jpg 300w,img/nat-1-large.jpg 1000w" sizes="(max-width:56.25em)13vw,(max-width:37.5em)20vw,300px" class="composition__photo composition__photo--p1" alt="photo-1" src="img/nat-1-large.jpg">
+                        <img srcset="img/nat-2.jpg 300w,img/nat-2-large.jpg 1000w" sizes="(max-width:56.25em)13vw,(max-width:37.5em)20vw,300px" class="composition__photo composition__photo--p2" alt="photo-2" src="img/nat-2-large.jpg">
+                        <img srcset="img/nat-3.jpg 300w,img/nat-3-large.jpg 1000w" sizes="(max-width:56.25em)13vw,(max-width:37.5em)20vw,300px" class="composition__photo composition__photo--p3" alt="photo-3" src="img/nat-3-large.jpg">
+                        <!-- <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                         <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"> -->
                     </div>
                 </div>
         </section>
@@ -312,6 +336,39 @@
         </section>
 
     </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <!-- Responsive image in html
+                With "picture" element we can specify multiple images for one image "source" element media query
+                can be applied and here when width less than 600px those 2 imgs are used else the "img" element 
+                one (this is called art direction i.e use smaller image for small screen size). Then the "srcset"
+                applies one image accoring to the density resolution of the screen i.e 1x or 2x and its
+                called density switching and 1x is density descripter -->
+            <picture class="footer__logo">
+                <source srcset="img/logo-green-small-1x.png 1x,img/logo-green-small-2x.png 2x" media="(max-width:37.5em)">
+                <img srcset="img/logo-green-1x.png 1x,img/logo-green-2x.png 2x" alt="Full Logo">
+            </picture>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__items"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__items"><a href="#" class="footer__link">Contact Us</a></li>
+                        <li class="footer__items"><a href="#" class="footer__link">Carrers</a></li>
+                        <li class="footer__items"><a href="#" class="footer__link">Privacy Policy</a></li>
+                        <li class="footer__items"><a href="#" class="footer__link">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Build by <a href="#" class="footer__link">Jonas Schmedtmann</a> for his online Advanced CSS course.Copyright &copy; by Jonas Schmedtmann.
+                </p>
+            </div>
+        </div>
+    </footer>
     <!--
               <section class="grid-test">
             <div class="row">
