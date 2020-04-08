@@ -1,14 +1,22 @@
 {
-    "name": "adventure",
-    "version": "1.0.0",
-    "description": "page",
-    "main": "index.js",
-    "scripts": {
-        "compile:sass": "node-sass sass/main.scss css/style.css -w"
-    },
-    "author": "yobin",
-    "license": "ISC",
-    "devDependencies": {
-        "node-sass": "^4.11.0"
-    }
+  "name": "adventure",
+  "version": "1.0.0",
+  "description": "page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "yobin",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yobin7364/PokharaFlys.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yobin7364/PokharaFlys/issues"
+  },
+  "homepage": "https://github.com/yobin7364/PokharaFlys#readme"
 }
