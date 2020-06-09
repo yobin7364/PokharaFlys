@@ -3,16 +3,18 @@
 }
 
 .header {
-    /*95% of viewport height */
-    height: 95vh;
-    background-image: url(../img/pkr1.JPG);
-    /* cover resizes the background image that is fully visible */
-    background-size: cover;
-    /* avoids clipping on center and no clipping of image*/
-    background-position: center;
-    position: relative;
-    -webkit-clip-path: polygon(0 0, 100% 23%, 73% 80%, 22% 100%);
-    clip-path: polygon(0 0, 100% 23%, 73% 80%, 22% 100%);
+    &__bg-image {
+        background-image: url(../img/pkr1.JPG);
+        /*95% of viewport height */
+        height: 95vh;
+        /* cover resizes the background image that is fully visible */
+        background-size: cover;
+        /* avoids clipping on center and no clipping of image*/
+        background-position: center;
+        position: relative;
+        -webkit-clip-path: polygon(0 0, 100% 23%, 73% 80%, 22% 100%);
+        clip-path: polygon(0 0, 100% 23%, 73% 80%, 22% 100%);
+    }
     //Responsive image in css using media query
     //dpi = dots per inch and 192dpi is the highest resolution.pkr1-large is not available now 
     //'min-resolution' tagrets 1x or 2x and "min-width" targets the web page width
