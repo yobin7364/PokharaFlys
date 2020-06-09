@@ -244,7 +244,8 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  overflow: hidden; }
+  overflow: hidden;
+  opacity: 0.15; }
   .bg-video__cover {
     height: 70%;
     object-fit: cover; }
