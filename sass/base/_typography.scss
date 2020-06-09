@@ -31,7 +31,7 @@ body {
         letter-spacing: 1rem;
         animation: moveInRight 2s ease-out;
         @include respond(phone) {
-            font-size: .5rem;
+            font-size: 2rem;
         }
     }
 }

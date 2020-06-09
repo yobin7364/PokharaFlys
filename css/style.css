@@ -107,7 +107,7 @@ body {
     animation: moveInRight 2s ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
-        font-size: .5rem; } }
+        font-size: 2rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -625,6 +625,10 @@ body {
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 23%, 73% 80%, 22% 100%);
   clip-path: polygon(0 0, 100% 23%, 73% 80%, 22% 100%); }
+  @media (max-width: 37.5em) {
+    .header__bg-image {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); } }
 
 .header__logo-box {
   position: absolute;
