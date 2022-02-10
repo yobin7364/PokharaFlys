@@ -10,7 +10,7 @@
   "author": "yobin",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^7.0.0"
   },
   "repository": {
     "type": "git",
